@@ -4,7 +4,17 @@
 # Health check
 GET {{baseUrl}}/health
 
-##
+###
 
 # Get rooms
 GET {{baseUrl}}/rooms
+
+###
+
+POST {{baseUrl}}/rooms
+Content-Type: application/json
+
+{
+  "name": "Sala de teste",
+  "description": "Essa é uma sala de teste"
+}
